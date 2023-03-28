@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zxx" >
+<head>
+    <meta charset="utf-8">
+    <title>Qui sommes-nous</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <meta name="author" content="ISMAIL Saman et Hoarau Tristan" />
+    <meta name="description" content="Ce site web contien des livres sous toutes ses formes."/>
+    <link rel="shortcut icon" href="../media/logo.ico" />
+</head>
+    <body onload="logo()">
+        <nav>
+            <div class="ul">
+                <input type = "button" class="li" value="Accueil" onclick="location.href='index.html'">
+                <input type = "button" class="li" value="Livres" onclick="location.href='livres.html'">
+                <input type = "button" class="li" value="Audios" onclick="location.href='audios.html'">
+                <input type = "button" class="li" value="Auteurs" onclick="location.href='auteurs.html'">
+                <input type = "button" class="current li" value="Qui sommes nous" onclick="location.href='quiSommesNous.html'">
+                <input type = "button" class="li" value="Nous contacter" onclick="location.href='nousContacter.html'">
+                <input type = "button" class="li" value="Autre" onclick="location.href='autre.html'">
+            </div>
+        </nav>
+
+        <div class="content">
+            <header>
+                <div class="header-content">
+                    <div class="next-back">
+                        <a href="javascript: history.go(-1)">Retour</a>
+                        <a href="nousContacter.html">Suivant</a>
+                    </div>
+                    <div id="canvas_container">
+                        <canvas id="c1" width="100" height="100">
+                        </canvas>
+                        <h1>Qui sommes-nous</h1>
+                    </div>
+
+                    <div id="divChercher">
+                        <select name="filtre" id="filtre" >
+                            <option selected="selected" value="selected">Toutes nos cat&eacute;gories</option>
+                            <option value="livres">Livres</option>
+                            <option value="ebooks">Audios</option>
+                            <option value="audio">Auteurs</option>
+                        </select>
+                        <input id="txtChercher" type="text" value="Que cherchez-vous ?" onfocus="cliqueBarreRecherche()"/>
+                        <img src="../media/search.png" alt="search"/>
+                    </div>
+                </div>
+            </header>
+
+        <div id="home-content">
+            <h2>Description</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex obcaecati quaerat quis quisquam unde. Accusamus commodi consectetur dignissimos, distinctio doloremque eaque laudantium maiores necessitatibus nemo non. Error perspiciatis quaerat quia.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis doloribus exercitationem iste praesentium qui quod sequi suscipit unde, voluptatibus. Architecto cumque, enim id laudantium perferendis praesentium quasi repellat rerum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam consequatur dolore, eligendi error ex hic impedit ipsam itaque molestias necessitatibus nostrum nulla quidem ratione sunt voluptas voluptatibus. Optio, repellendus!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae cum dolor doloribus eligendi magnam molestiae nesciunt nostrum vero! Aliquam assumenda atque, blanditiis dolorem in necessitatibus optio quos repellat.
+                </p>
+            <h2>Les fondateurs</h2>
+            <div id="imagesFondateurs">
+                <a href = "https://fr.linkedin.com/in/saman-ismail-6275051aa">
+                      <img src = "../media/saman.jpg" alt ="ISMAIL Saman">
+                </a>
+                <img src = "../media/tristan.jpg" alt = "HOARAU Tristan">
+            </div>
+            <br><br>
+            <a id="nousContacterBoutton" href="../html/nousContacter.html" class="btn">Nous contacter</a>
+        </div>
+
+            <div class="clear">
+
+                <footer>
+                    <ul>
+                        <li>CORTEX</li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Mentions l&eacute;gales</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li>© Cortex 2021</li>
+                    </ul>
+                    <ul>
+                        <li><a href="livres.html">Les livres</a></li>
+                        <li><a href="audios.html">Les audios</a></li>
+                        <li><a href="auteurs.html">Auteurs</a></li>
+                        <li><a href="quiSommesNous.html">Qui sommes-nous</a></li>
+                        <li><a href="nousContacter.html">Nous contacter</a></li>
+                        <li><a href="autre.html">Autre</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+        <script src="../javascript/code.js"></script>
+    </body>

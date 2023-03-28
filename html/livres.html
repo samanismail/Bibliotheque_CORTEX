@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Livres</title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <meta name="author" content="ISMAIL Saman et Hoarau Tristan" />
+        <meta name="description" content="Ce site web contient des livres sous toutes ses formes."/>
+        <link rel="shortcut icon" href="../media/logo.ico" />
+    </head>
+
+    <body onload="logo()" id="top">
+    <nav>
+        <div class="ul">
+            <input type = "button" class="li" value="Accueil" onclick="location.href='index.html'">
+            <input type = "button" class="current li" value="Livres" onclick="location.href='Livres.html'">
+            <input type = "button" class="li" value="Audios" onclick="location.href='Audios.html'">
+            <input type = "button" class="li" value="Auteurs" onclick="location.href='Auteurs.html'">
+            <input type = "button" class="li" value="Qui sommes nous" onclick="location.href='QuiSommesNous.html'">
+            <input type = "button" class="li" value="Nous contacter" onclick="location.href='nousContacter.html'">
+            <input type = "button" class="li" value="Autre" onclick="location.href='Autre.html'">
+        </div>
+    </nav>
+        <div class="content">
+            <header>
+                <div class="header-content">
+                    <div class="next-back">
+                        <a href="javascript: history.go(-1)">Retour</a>
+                        <a href="audios.html">Suivant</a>
+                    </div>
+                    <div id="canvas_container">
+                        <canvas id="c1" width="100" height="100">
+                        </canvas>
+                        <h1>Livres</h1>
+                    </div>
+
+                    <div id="divChercher">
+                        <select name="filtre" id="filtre" >
+                            <option selected="selected" value="tous">Toutes nos catégories</option>
+                            <option value="livres">Livres</option>
+                            <option value="audios">Audios</option>
+                            <option value="auteurs">Auteurs</option>
+                        </select>
+                        <input id="txtChercher" type="text" value="Que cherchez-vous ?" onfocus="cliqueBarreRecherche()"/>
+                        <img src="../media/search.png" alt="search" onclick="chercher()"/>
+                 </div>
+             </div>
+            </header>
+
+
+        <div id="home-content">
+                <h2>Nos livres</h2>
+             <table>
+                 <tr>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://www.babelio.com/livres/Coelho-Lalchimiste/5047">
+                                 <img class="photoArticles" src="../media/livres/lalchimiste.jpg" alt="l'alchimiste"/>
+                             </a>
+                             <p class="titre">l'Alchimiste<br/><span class="auteur">Paulo Coelho</span></p>
+                             <p class="description">Pour des millions de lecteurs dans le monde, ce livre a été une révélation : la clef d'une quête spirituelle que chacun de nous peut entreprendre.</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://fr.wikipedia.org/wiki/Marche_ou_cr%C3%A8ve_(roman)">
+                                 <img class="photoArticles" src="../media/livres/marcheOuCreve.jpg" alt="Marche ou créve"/>
+                             </a>
+                             <p class="titre">Marche ou créve<br/><span class="auteur">Stephen King</span></p>
+                             <p class="description">Garraty, un jeune adolescent natif du Maine, va concourir pour « La Longue Marche », une compétition qui compte cent participants. Cet événement est très attendu.
+                                 Il sera retransmis à la télévision, suivi par des milliers de personnes.
+                                 Mais ce n’est pas une marche comme les autres, plutôt un jeu sans foi ni loi…</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://www.livredepoche.com/livre/la-ligne-verte-9782253122920">
+                                 <img class="photoArticles" src="../media/livres/laLigneVerte.jpg" alt="La Ligne verte"/>
+                             </a>
+                             <p class="titre">La Ligne verte<br/><span class="auteur">Stephen King</span></p>
+                             <p class="description">Paul Edgecombe, ancien gardien-chef d’un pénitencier dans les années 1930, entreprend d’écrire ses mémoires.
+                                 Il revient sur l’affaire John Caffey – ce grand Noir au regard absent, condamné à mort pour le viol et le meurtre de deux fillettes – qui défraya la chronique en 1932.</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://www.babelio.com/livres/Brule-Le-bonheur-nest-pas-la-ou-vous-le-pensez/1070523">
+                                <img class="photoArticles" src="../media/livres/leBonheurNestPasLaOuVousLePensez.jpg" alt="Le Bonheur n'est Pas là Où Vous le Pensez"/>
+                             </a>
+                             <p class="titre">Le Bonheur n'est Pas là Où Vous le Pensez<br/><span class="auteur">Gael Brulé</span></p>
+                             <p class="description">Nous n'avons jamais autant cherché le bonheur, et plus nous le désirons moins nous le trouvons.<br/>
+                                 Peut-être parce que nous ne regardons pas au bon endroit Peut-être parce que nous n'avons pas les bons outils pour l'atteindre Et si nous nous trompions totalement sur ce qu'est le bonheur Gaël Brulé nous invite à remettre en cause nos idées reçues</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://www.babelio.com/livres/Niven-Les-mille-visages-de-notre-histoire/1009234">
+                                 <img class="photoArticles" src="../media/livres/lesMillevisagesdeNotreHistoire.jpg" alt="Les Mille visages de Notre Histoire"/>
+                             </a>
+                             <p class="titre">Les Mille visages de Notre Histoire<br/><span class="auteur">Jennifer Niven</span></p>
+                             <p class="description">out le monde croit connaître Libby Groby, pourtant, personne ne s'est jamais intéressé qu'à son obésité.
+                                 Elle a longtemps vécu recluse dans sa chambre, cachant son corps et ses angoisses. Cette année,
+                                 sa vie peut changer : Libby s'est inscrite au lycée. Tout le monde croit connaître Jack Masselin : étudiant rebelle, sexy... aux réactions imprévisibles.</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://livre.fnac.com/a11074439/Christophe-Galfard-L-Univers-a-portee-de-main">
+                                <img class="photoArticles" src="../media/livres/luniverAPorteDeMain.jpg" alt="L'univers à portée de main"/>
+                             </a>
+                             <p class="titre">L'univers à portée de main<br/><span class="auteur">Christophe Galfard</span></p>
+                             <p class="description">ans "L'univers à portée de main", Christophe Galfard nous emmène dans un passionnant voyage au sein de la physique théorique. Son livre, à la matière a priori aride, se lit comme un véritable roman. Les questions les plus pointues de cosmologie ou de physique quantique sont mises à la portée de tous grâce à un rare sens pédagogique.</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://www.babelio.com/livres/Schneider-Demain-nest-pas-un-autre-jour/920951">
+                                 <img class="photoArticles" src="../media/livres/demainNestPasUnAutreJour.jpg" alt="Demain n'est pas un autre jour"/>
+                             </a>
+                             <p class="titre">Demain n'est pas un autre jour<br/><span class="auteur">Robyn Schneider</span></p>
+                             <p class="description">Avant le diagnostic, la vie de Lane était plutôt banale.Au sanatorium pour ados, il rencontre l'irrésistible Sadie et sa bande de copains. Rebelles, excentriques et résolument vivants, dans le monde rigide de l'établissement, ces adolescents ne suivent que leurs propres règles.</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://livre.fnac.com/a10311387/Collectif-Ghibli-les-artisans-du-reve">
+                                <img class="photoArticles" src="../media/livres/GhibliLesArtisansDuReve.jpg" alt="Ghibli, les Artisans du Rêve : Hommage au Studio"/>
+                             </a>
+                             <p class="titre">Ghibli, les Artisans du Rêve<br/><span class="auteur">Hommage au Studio</span></p>
+                             <p class="description">Avant le diagnostic, la vie de Lane était plutôt banale.Au sanatorium pour ados, il rencontre l'irrésistible Sadie et sa bande de copains. Rebelles, excentriques et résolument vivants, dans le monde rigide de l'établissement, ces adolescents ne suivent que leurs propres règles.</p>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="article articleLivre tous">
+                             <a href = "https://livre.fnac.com/a4133013/Jean-Robin-Le-livre-le-plus-utile-au-monde">
+                                <img class="photoArticles" src="../media/livres/leLivreLePlusUtileAuMonde.jpg" alt="Le Livre le Plus utile au Monde"/>
+                             </a>
+                             <p class="titre">Le Livre le Plus utile au Monde<br/><span class="auteur">Jean Robin</span></p>
+                             <p class="description">En ces temps de crise, il est bon de revenir aux fondamentaux. C'est ce que le livre le plus utile au monde propose de faire, en offrant des pistes toutes plus utiles les unes que les autres pour que les lecteurs puissent réussir leur vie. Véritable condensé de bon sens, d'expériences fertiles, de faits et de chiffres particulièrement indispensables à connaître.</p>
+                         </div>
+                     </td>
+                 </tr>
+             </table>
+            <div class="haut_de_page">
+                 <a href="#top" >Haut de page</a>
+            </div>
+        </div>
+            <div class="clear">
+
+                <footer>
+                    <ul>
+                        <li>CORTEX</li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Mentions l&eacute;gales</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li>© Cortex 2021</li>
+                    </ul>
+                    <ul>
+                        <li><a href="livres.html">Les livres</a></li>
+                        <li><a href="audios.html">Les audios</a></li>
+                        <li><a href="auteurs.html">Auteurs</a></li>
+                        <li><a href="quiSommesNous.html">Qui sommes-nous</a></li>
+                        <li><a href="nousContacter.html">Nous contacter</a></li>
+                        <li><a href="autre.html">Autre</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+        <script src="../javascript/code.js"></script>
+        <!-- Scripts pour haut de page plus fluide -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script>
+            $('a[href^="#"]').click(function(){
+                var the_id = $(this).attr("href");
+                if (the_id === '#') {
+                    return;
+                }
+                $('html, body').animate({
+                    scrollTop:$(the_id).offset().top
+                }, 'slow');
+                return false;
+            });
+        </script>
+
+    </body>
+</html>
